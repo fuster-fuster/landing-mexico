@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Refacciones para Tractor Agrícola al Mayoreo | Repuestos Fuster México</title>
+  <meta name="description" content="Fabricante español de refacciones alternativas para tractores agrícolas. Venta al mayoreo para refaccionarias en México. Calidad OEM para John Deere, Massey Ferguson, Case IH y New Holland.">
+  
+  <!-- Tipografía Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #0a2540;
+      --primary-hover: #07192c;
+      --accent: #d97706;
+      --accent-hover: #b45309;
+      --whatsapp: #25d366;
+      --whatsapp-hover: #1ebd56;
+      --text-dark: #1e293b;
+      --text-muted: #64748b;
+      --bg-light: #f8fafc;
+      --bg-white: #ffffff;
+      --border-color: #e2e8f0;
+      --radius: 8px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header */
+    header {
+      background: var(--bg-white);
+      border-bottom: 1px solid var(--border-color);
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--primary);
+      text-decoration: none;
+      letter-spacing: -0.5px;
+    }
+    .logo span {
+      color: var(--accent);
+    }
+    .header-tag {
+      font-size: 0.85rem;
+      font-weight: 600;
+      background: #eff6ff;
+      color: #1d4ed8;
+      padding: 4px 12px;
+      border-radius: 50px;
+      border: 1px solid #bfdbfe;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #0a2540 0%, #1e3a5f 100%);
+      color: var(--bg-white);
+      padding: 70px 0 60px;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+      align-items: center;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    .hero h1 span {
+      color: #fbbf24;
+    }
+    .hero p {
+      font-size: 1.15rem;
+      color: #cbd5e1;
+      margin-bottom: 30px;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 28px;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: var(--radius);
+      text-decoration: none;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      border: none;
+    }
+    .btn-primary {
+      background-color: var(--accent);
+      color: #fff;
+    }
+    .btn-primary:hover {
+      background-color: var(--accent-hover);
+    }
+    .btn-whatsapp {
+      background-color: var(--whatsapp);
+      color: #fff;
+      gap: 8px;
+    }
+    .btn-whatsapp:hover {
+      background-color: var(--whatsapp-hover);
+    }
+    .hero-badges {
+      display: flex;
+      gap: 20px;
+      font-size: 0.9rem;
+      color: #94a3b8;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      padding-top: 20px;
+    }
+    .hero-badges div {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Form Card */
+    .form-card {
+      background: var(--bg-white);
+      color: var(--text-dark);
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+    .form-card h3 {
+      font-size: 1.35rem;
+      margin-bottom: 8px;
+      color: var(--primary);
+    }
+    .form-card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+    .form-group {
+      margin-bottom: 16px;
+    }
+    .form-group label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #334155;
+    }
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      font-size: 0.95rem;
+      outline: none;
+    }
+    .form-group input:focus,
+    .form-group select:focus {
+      border-color: var(--primary);
+    }
+    .form-submit {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    /* Value Props / Features */
+    .section {
+      padding: 70px 0;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .section-title h2 {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+    .section-title p {
+      color: var(--text-muted);
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+    .feature-card {
+      background: var(--bg-white);
+      border: 1px solid var(--border-color);
+      padding: 30px 24px;
+      border-radius: var(--radius);
+      transition: transform 0.2s;
+    }
+    .feature-card:hover {
+      transform: translateY(-4px);
+    }
+    .feature-icon {
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+    .feature-card h4 {
+      font-size: 1.15rem;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+    .feature-card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    /* Brands & Families */
+    .brands-section {
+      background: var(--bg-white);
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+    }
+    .brands-list {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .brand-item {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #475569;
+      background: var(--bg-light);
+      padding: 12px 24px;
+      border-radius: var(--radius);
+      border: 1px dashed var(--border-color);
+    }
+    .parts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .part-box {
+      background: var(--bg-light);
+      padding: 20px;
+      border-radius: var(--radius);
+      text-align: center;
+    }
+    .part-box h5 {
+      font-size: 1rem;
+      color: var(--primary);
+      margin-bottom: 6px;
+    }
+    .part-box span {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* FAQs */
+    .faq-grid {
+      max-width: 800px;
+      margin: 0 auto;
+      display: grid;
+      gap: 20px;
+    }
+    .faq-item {
+      background: var(--bg-white);
+      border: 1px solid var(--border-color);
+      padding: 24px;
+      border-radius: var(--radius);
+    }
+    .faq-item h4 {
+      font-size: 1.05rem;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+    .faq-item p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    /* Floating WhatsApp Button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: var(--whatsapp);
+      color: white;
+      border-radius: 50px;
+      padding: 12px 22px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+      z-index: 999;
+      transition: transform 0.2s;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.05);
+      background-color: var(--whatsapp-hover);
+    }
+
+    /* Footer */
+    footer {
+      background: var(--primary);
+      color: #94a3b8;
+      padding: 40px 0 20px;
+      font-size: 0.85rem;
+      text-align: center;
+    }
+    footer a {
+      color: #cbd5e1;
+      text-decoration: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-content">
+      <a href="https://www.repuestosfuster.com" class="logo">REPUESTOS <span>FUSTER</span></a>
+      <div class="header-tag">Exportación Directa a México 🇲🇽</div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1>Refacciones para Tractor Agrícola <span>Directo de Fabricante</span> al Mayoreo</h1>
+        <p>Calidad europea equivalente a OEM para refaccionarias, talleres y distribuidores en México. Suministro garantizado para John Deere, Massey Ferguson, Case IH y New Holland.</p>
+        
+        <div class="hero-actions">
+          <a href="#formulario" class="btn btn-primary">Solicitar Catálogo y Precios</a>
+          <!-- Reemplazar XXXXXXXXX por el número de WhatsApp con prefijo 34 -->
+          <a href="https://wa.me/34XXXXXXXXX?text=Hola,%20me%20interesa%20cotizar%20refacciones%20al%20mayoreo%20para%20M%C3%A9xico" class="btn btn-whatsapp" target="_blank">
+            Cotizar por WhatsApp
+          </a>
+        </div>
+
+        <div class="hero-badges">
+          <div>✓ Fabricación en España</div>
+          <div>✓ Certificado TLCUEM (0% Arancel)</div>
+          <div>✓ +8,000 Referencias</div>
+        </div>
+      </div>
+
+      <!-- Formulario integrado para Mailrelay -->
+      <div class="form-card" id="formulario">
+        <h3>Descargar Catálogo B2B</h3>
+        <p>Ingresa tus datos para recibir lista de precios para mayoristas en México.</p>
+        
+        <!-- Reemplazar la URL del action por la generada en Mailrelay -->
+        <form action="TU_URL_DE_FORMULARIO_MAILRELAY" method="POST">
+          <div class="form-group">
+            <label for="nombre">Nombre y Apellidos *</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Carlos Mendoza" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="empresa">Nombre de la Refaccionaria / Taller *</label>
+            <input type="text" id="empresa" name="empresa" placeholder="Ej. Refacciones Agrícolas del Norte" required>
+          </div>
+
+          <div class="form-group">
+            <label for="estado">Estado / Ciudad en México *</label>
+            <input type="text" id="estado" name="estado" placeholder="Ej. Culiacán, Sinaloa" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo Electrónico *</label>
+            <input type="email" id="email" name="email" placeholder="contacto@turefaccionaria.mx" required>
+          </div>
+
+          <div class="form-group">
+            <label for="whatsapp">WhatsApp / Teléfono *</label>
+            <input type="tel" id="whatsapp" name="whatsapp" placeholder="+52 667 123 4567" required>
+          </div>
+
+          <div class="form-group">
+            <label for="marca_interes">Marca de mayor demanda</label>
+            <select id="marca_interes" name="marca_interes">
+              <option value="John Deere">John Deere</option>
+              <option value="Massey Ferguson">Massey Ferguson</option>
+              <option value="Case IH / New Holland">Case IH / New Holland</option>
+              <option value="Varias">Varias Marcas</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit">Recibir Catálogo y Cotización</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marcas y Familias -->
+  <section class="section brands-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Compatibilidad Exacta con Marcas Líderes</h2>
+        <p>Refacciones de reemplazo no original fabricadas bajo especificaciones técnicas de equipo original (OEM).</p>
+      </div>
+
+      <div class="brands-list">
+        <div class="brand-item">John Deere</div>
+        <div class="brand-item">Massey Ferguson</div>
+        <div class="brand-item">New Holland</div>
+        <div class="brand-item">Case IH</div>
+        <div class="brand-item">Carraro (Ejes)</div>
+      </div>
+
+      <div class="parts-grid">
+        <div class="part-box">
+          <h5>Ejes Delanteros y 4WD</h5>
+          <span>Mangetas, piñones, coronas y crucetas.</span>
+        </div>
+        <div class="part-box">
+          <h5>Dirección y Articulación</h5>
+          <span>Rótulas, terminales, cilindros y barras.</span>
+        </div>
+        <div class="part-box">
+          <h5>Transmisión y Frenos</h5>
+          <span>Discos, bombas de freno y sincronizadores.</span>
+        </div>
+        <div class="part-box">
+          <h5>Elevación Hidráulica</h5>
+          <span>Brazos, tirantes, pasadores y bujes.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Propuesta de Valor B2B -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Ventajas de Importar con Repuestos Fuster</h2>
+        <p>Tu proveedor europeo directo, sin intermediarios y con total garantía de servicio.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">⚙️</div>
+          <h4>Calidad de Fabricación Europea</h4>
+          <p>Tolerancias exactas y tratamientos térmicos certificados. Elimina las reclamaciones y garantías habituales de las piezas genéricas de baja calidad.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📄</div>
+          <h4>Ventajas Arancelarias TLCUEM</h4>
+          <p>Suministramos certificado de origen EUR.1 para que tus importaciones en México aprovechen las exenciones arancelarias del tratado con la UE.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📦</div>
+          <h4>Envíos Consolidados</h4>
+          <p>Gestión flexible en condiciones Incoterms (EXW, FOB, CIF o Courier urgente) optimizando el costo logístico por pieza.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🔍</div>
+          <h4>Cruce Directo por Referencia OEM</h4>
+          <p>Cotiza simplemente enviando los números de parte originales. Nuestro equipo técnico identifica y valida la compatibilidad al instante.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Preguntas Frecuentes -->
+  <section class="section" style="background-color: var(--bg-white); border-top: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="section-title">
+        <h2>Preguntas Frecuentes para Mayoristas</h2>
+        <p>Todo lo que necesitas saber para comprar refacciones desde México.</p>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h4>¿Venden a clientes particulares en México?</h4>
+          <p>Nuestro modelo de exportación está enfocado principalmente en venta al mayoreo para refaccionarias, distribuidores agrícolas, importadores y talleres mecánicos especializados.</p>
+        </div>
+
+        <div class="faq-item">
+          <h4>¿Cuál es el tiempo de entrega hacia México?</h4>
+          <p>Para pedidos urgentes vía aérea, el tiempo de tránsito es de 4 a 7 días hábiles. Para pedidos consolidados marítimos de alto volumen, el tiempo habitual es de 20 a 30 días.</p>
+        </div>
+
+        <div class="faq-item">
+          <h4>¿Cómo puedo solicitar una cotización por número de parte?</h4>
+          <p>Puedes enviarnos tu listado de referencias OEM o códigos Fuster a través del formulario o directamente a nuestro WhatsApp comercial para recibir precios y disponibilidad.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Botón Flotante de WhatsApp -->
+  <a href="https://wa.me/34XXXXXXXXX?text=Hola,%20me%20interesa%20cotizar%20refacciones%20al%20mayoreo%20para%20M%C3%A9xico" class="whatsapp-float" target="_blank">
+    <span>💬 WhatsApp Mayoristas</span>
+  </a>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2026 Repuestos Fuster, S.L. - Fabricante de Refacciones Agrícolas | Zaragoza, España</p>
+      <p style="margin-top: 8px;">
+        <a href="https://www.repuestosfuster.com" target="_blank">Visitar Web Principal</a> | 
+        <a href="https://www.repuestosfuster.com/politica-privacidad/" target="_blank">Aviso de Privacidad</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
